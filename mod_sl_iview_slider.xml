@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install  version="1.5" type="module" client="site" method="upgrade">
+  <name>StarLite iView Slider</name>
+  <author>StarLite</author>
+  <creationDate>September 30, 2012</creationDate>
+  <copyright>Copyright (C) 2012 www.starliteweb.com All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+  <authorEmail>admin@starliteweb.com</authorEmail>
+  <version>1.0</version>
+  <authorUrl>www.starliteweb.com</authorUrl>
+  <description>MOD_SL_IVIEW_SLIDER_XML_DESCRIPTION</description>
+  <files>
+    <filename module="mod_sl_iview_slider">mod_sl_iview_slider.php</filename>
+    <filename>index.html</filename>
+    <filename>helper.php</filename>
+    <folder>assets</folder>
+    <folder>fields</folder>
+    <folder>tmpl</folder>
+  </files>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_sl_iview_slider.ini</language>
+    <language tag="en-GB">language/en-GB.mod_sl_iview_slider.sys.ini</language>
+  </languages>
+  <params addpath="/modules/mod_sl_iview_slider/fields">
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_SETTINGS" label="" description="" />
+    <param name="slide_width" type="text" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_WIDTH" description="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_WIDTH_DESC" />
+    <param name="slide_height" type="text" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_HEIGHT" description="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_HEIGHT_DESC" />
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_IMAGES" label="" description="" />
+    <param name="item_dir" type="folderlist" directory="images" filter="" exclude="" hide_none="0" hide_default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DIR" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DIR_DESC" />
+    <param name="item_path" type="textarea" rows="5" cols="30" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_PATH" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_PATH_DESC" />
+    <param name="item_title" type="textarea" rows="5" cols="30" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_TITLE" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_TITLE_DESC" />
+    <param name="item_description" type="textarea" rows="5" cols="30" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DESCRIPTION" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DESCRIPTION_DESC" />
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_PREFERENCES" label="" description="" />
+    <param name="fx" type="list" default="random" label="MOD_SL_IVIEW_SLIDER_FIELD_EFFECT" description="MOD_SL_IVIEW_SLIDER_FIELD_EFFECT_DESC">
+      <option value="random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_R</option>
+      <option value="strip-down-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SDR</option>
+      <option value="strip-down-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SDL</option>
+      <option value="strip-up-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUR</option>
+      <option value="strip-up-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUL</option>
+      <option value="strip-up-down">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUD</option>
+      <option value="strip-up-down-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUDL</option>
+      <option value="strip-left-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SLF</option>
+      <option value="strip-left-right-down">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SLRD</option>
+      <option value="slide-in-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SIR</option>
+      <option value="slide-in-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SIL</option>
+      <option value="slide-in-up">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SIU</option>
+      <option value="slide-in-down">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SID</option>
+      <option value="left-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_LC</option>
+      <option value="right-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_RC</option>
+      <option value="top-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_TC</option>
+      <option value="bottom-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BC</option>
+      <option value="fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_F</option>
+      <option value="block-random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BR</option>
+      <option value="block-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BF</option>
+      <option value="block-fade-reverse">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BFR</option>
+      <option value="block-expand">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BE</option>
+      <option value="block-expand-reverse">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BERE</option>
+      <option value="block-expand-random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BERA</option>
+      <option value="block-drop-random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BDR</option>
+      <option value="zigzag-top">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZT</option>
+      <option value="zigzag-bottom">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZB</option>
+      <option value="zigzag-grow-top">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZGT</option>
+      <option value="zigzag-grow-bottom">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZGB</option>
+      <option value="zigzag-drop-top">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZDT</option>
+      <option value="zigzag-drop-bottom">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZDB</option>
+      <option value="strip-left-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SLF</option>
+      <option value="strip-right-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SRF</option>
+      <option value="strip-top-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_STF</option>
+      <option value="strip-bottom-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SBF</option>
+    </param>
+    <param name="strips" type="text" default="20" label="MOD_SL_IVIEW_SLIDER_FIELD_STRIPS" description="MOD_SL_IVIEW_SLIDER_FIELD_STRIPS_DESC" />
+    <param name="blockCols" type="text" default="10" first="1" last="50" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKCOLS" description="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKCOLS_DESC" />
+    <param name="blockRows" type="text" default="5" first="1" last="50" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKROWS" description="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKROWS_DESC" />
+    <param name="animationSpeed" type="text" default="500" label="MOD_SL_IVIEW_SLIDER_FIELD_ANIMSPEED" description="MOD_SL_IVIEW_SLIDER_FIELD_ANIMSPEED_DESC" />
+    <param name="pauseTime" type="text" default="5000" label="MOD_SL_IVIEW_SLIDER_FIELD_PAUSETIME" description="MOD_SL_IVIEW_SLIDER_FIELD_PAUSETIME_DESC" />
+    <param name="startSlide" type="text" default="0" label="MOD_SL_IVIEW_SLIDER_FIELD_STARTSLIDE" description="MOD_SL_IVIEW_SLIDER_FIELD_STARTSLIDE_DESC" />
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_CAPTION" label="" description="" />
+    <param name="captionSpeed" type="text" default="500"  label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_SPEED" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_SPEED_DESC" />
+    <param name="captionOpacity" type="text" default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_OPACITY_DESC" />
+    <param name="captionBackground" type="text" default="#000000"  label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_BACKGROUND" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_BACKGROUND_DESC" />
+    <param name="captionPosition" type="list" default="topleft" label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_POSITION" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_POSITION_DESC">
+      <option value="topleft">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_TOPLEFT</option>
+      <option value="topright">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_TOPRIGHT</option>
+      <option value="bottomleft">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_BOTTOMLEFT</option>
+      <option value="bottomright">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_BOTTOMRIGHT</option>
+    </param>
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_NAVIGATION" label="" description="" />
+    <param name="directionNav" type="radio" default="0" label="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV" description="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </param>
+    <param name="directionNavHoverOpacity" type="text" default="0.6" label="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV_OPACITY_DESC" />
+    <param name="controlNav" type="radio" default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV" description="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </param>
+    <param name="controlNavHoverOpacity" type="text" default="0.6" label="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV_OPACITY_DESC" />
+    <param name="pauseOnHover" type="radio" default="0" label="MOD_SL_IVIEW_SLIDER_FIELD_PAUSEONHOVER" description="MOD_SL_IVIEW_SLIDER_FIELD_PAUSEONHOVER_DESC">
+      <option value="1">JYES</option>
+      <option value="0">JNO</option>
+    </param>
+    <param name="previousLabel" type="text" default="Prev" label="MOD_SL_IVIEW_SLIDER_FIELD_PREVTEXT" description="MOD_SL_IVIEW_SLIDER_FIELD_PREVTEXT_DESC" />
+    <param name="nextLabel" type="text" default="Next" label="MOD_SL_IVIEW_SLIDER_FIELD_NEXTTEXT" description="MOD_SL_IVIEW_SLIDER_FIELD_NEXTTEXT_DESC" />
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_APPEARANCE" label="" description="" />
+    <param name="titleColor" type="text" default="#FFFFFF"  label="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_COLOR_DESC" />
+    <param name="titleFontSize" type="text" default="18"  label="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_SIZE" description="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_SIZE_DESC" />
+    <param name="titleFontStyle" type="folderlist" directory="modules/mod_sl_iview_slider/assets/fonts" hide_none="1" hide_default="0" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_STYLE" description="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_STYLE_DESC" />
+    <param name="descColor" type="text" default="#FFFFFF"  label="MOD_SL_IVIEW_SLIDER_FIELD_DESCRIPTION_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_DESCRIPTION_COLOR_DESC" />
+    <param name="descFontSize" type="text" default="12"  label="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_SIZE" description="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_SIZE_DESC" />
+    <param name="descFontStyle" type="folderlist" directory="modules/mod_sl_iview_slider/assets/fonts" hide_none="1" hide_default="0" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_STYLE" description="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_STYLE_DESC" />
+    <param name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_TIMER" label="" description="" />
+    <param name="timer" type="radio" default="Pie" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_DESC">
+      <option value="Pie">MOD_SL_IVIEW_SLIDER_FIELD_TIMER_PIE</option>
+      <option value="360Bar">MOD_SL_IVIEW_SLIDER_FIELD_TIMER_360BAR</option>
+      <option value="Bar">MOD_SL_IVIEW_SLIDER_FIELD_TIMER_BAR</option>
+    </param>
+    <param name="timerPosition" type="list" default="top-right" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_POSITION" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_POSITION_DESC">
+      <option value="top-left">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_TOPLEFT</option>
+      <option value="top-right">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_TOPRIGHT</option>
+      <option value="bottom-left">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_BOTTOMLEFT</option>
+      <option value="bottom-right">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_BOTTOMRIGHT</option>
+    </param>
+    <param name="timerBg" type="text" default="#000000"  label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_BACKGROUND" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_BACKGROUND_DESC" />
+    <param name="timerColor" type="text" default="#EEEEEE"  label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_COLOR_DESC" />
+    <param name="timerOpacity" type="text" default="0.5" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_OPACITY_DESC" />
+    <param name="timerDiameter" type="text" default="30" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_DIAMETER" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_DIAMETER_DESC" />
+    <param name="timerStroke" type="text" default="3" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_STROKE" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_STROKE_DESC" />
+    <param name="timerBarStroke" type="text" default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE_DESC" />
+    <param name="timerBarStrokeColor" type="text" default="#EEEEEE"  label="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE_COLOR_DESC" />
+  <param name="" type="header" default="COM_MODULES_JQUERY_FIELDSET_LABEL" label="" description="" />
+    <param name="jquery_source" type="radio" default="local" label="MOD_SL_IVIEW_SLIDER_FIELD_JQUERY_SOURCE" description="MOD_SL_IVIEW_SLIDER_FIELD_JQUERY_SOURCE_DESC">
+      <option value="local">MOD_SL_IVIEW_SLIDER_OPTION_JQUERY_SOURCE_LOCAL</option>
+      <option value="google">MOD_SL_IVIEW_SLIDER_OPTION_JQUERY_SOURCE_GOOGLE</option>
+      <option value="none">JNONE</option>
+    </param>
+  </params>
+  <params group="advanced">
+    <param name="moduleclass_sfx" type="text" size="40" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+    <param name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_LABEL">
+      <option value="1">JGLOBAL_USE_GLOBAL</option>
+      <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+    </param>
+    <param name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+    <param name="cachemode" type="hidden" default="static">
+      <option value="static"></option>
+    </param>
+  </params>
+  <config>
+    <fields name="params" addfieldpath="/modules/mod_sl_iview_slider/fields" >
+      <fieldset name="basic">
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_SETTINGS" label="" description="" />
+        <field name="slide_width" type="text" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_WIDTH" description="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_WIDTH_DESC" />
+        <field name="slide_height" type="text" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_HEIGHT" description="MOD_SL_IVIEW_SLIDER_FIELD_SLIDE_HEIGHT_DESC" />
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_IMAGES" label="" description="" />
+        <field name="item_dir" type="folderlist" directory="images" filter="" exclude="" hide_none="0" hide_default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DIR" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DIR_DESC" />
+        <field name="item_path" type="textarea" rows="5" cols="30" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_PATH" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_PATH_DESC" />
+        <field name="item_title" type="textarea" rows="5" cols="30" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_TITLE" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_TITLE_DESC" />
+        <field name="item_description" type="textarea" rows="5" cols="30" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DESCRIPTION" description="MOD_SL_IVIEW_SLIDER_FIELD_ITEM_DESCRIPTION_DESC" />
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_PREFERENCES" label="" description="" />
+        <field name="fx" type="list" default="random" label="MOD_SL_IVIEW_SLIDER_FIELD_EFFECT" description="MOD_SL_IVIEW_SLIDER_FIELD_EFFECT_DESC">
+          <option value="random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_R</option>
+          <option value="strip-down-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SDR</option>
+          <option value="strip-down-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SDL</option>
+          <option value="strip-up-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUR</option>
+          <option value="strip-up-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUL</option>
+          <option value="strip-up-down">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUD</option>
+          <option value="strip-up-down-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SUDL</option>
+          <option value="strip-left-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SLF</option>
+          <option value="strip-left-right-down">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SLRD</option>
+          <option value="slide-in-right">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SIR</option>
+          <option value="slide-in-left">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SIL</option>
+          <option value="slide-in-up">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SIU</option>
+          <option value="slide-in-down">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SID</option>
+          <option value="left-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_LC</option>
+          <option value="right-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_RC</option>
+          <option value="top-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_TC</option>
+          <option value="bottom-curtain">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BC</option>
+          <option value="fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_F</option>
+          <option value="block-random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BR</option>
+          <option value="block-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BF</option>
+          <option value="block-fade-reverse">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BFR</option>
+          <option value="block-expand">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BE</option>
+          <option value="block-expand-reverse">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BERE</option>
+          <option value="block-expand-random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BERA</option>
+          <option value="block-drop-random">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_BDR</option>
+          <option value="zigzag-top">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZT</option>
+          <option value="zigzag-bottom">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZB</option>
+          <option value="zigzag-grow-top">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZGT</option>
+          <option value="zigzag-grow-bottom">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZGB</option>
+          <option value="zigzag-drop-top">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZDT</option>
+          <option value="zigzag-drop-bottom">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_ZDB</option>
+          <option value="strip-left-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SLF</option>
+          <option value="strip-right-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SRF</option>
+          <option value="strip-top-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_STF</option>
+          <option value="strip-bottom-fade">MOD_SL_IVIEW_SLIDER_OPTION_EFFECT_SBF</option>
+        </field>
+        <field name="strips" type="integer" default="20" first="0" last="50" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_STRIPS" description="MOD_SL_IVIEW_SLIDER_FIELD_STRIPS_DESC" />
+        <field name="blockCols" type="integer" default="10" first="1" last="50" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKCOLS" description="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKCOLS_DESC" />
+        <field name="blockRows" type="integer" default="5" first="1" last="50" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKROWS" description="MOD_SL_IVIEW_SLIDER_FIELD_BLOCKROWS_DESC" />
+        <field name="animationSpeed" type="text" default="500" label="MOD_SL_IVIEW_SLIDER_FIELD_ANIMSPEED" description="MOD_SL_IVIEW_SLIDER_FIELD_ANIMSPEED_DESC" />
+        <field name="pauseTime" type="text" default="5000" label="MOD_SL_IVIEW_SLIDER_FIELD_PAUSETIME" description="MOD_SL_IVIEW_SLIDER_FIELD_PAUSETIME_DESC" />
+        <field name="startSlide" type="integer" default="0" first="0" last="50" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_STARTSLIDE" description="MOD_SL_IVIEW_SLIDER_FIELD_STARTSLIDE_DESC" />
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_CAPTION" label="" description="" />
+        <field name="captionSpeed" type="text" default="500"  label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_SPEED" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_SPEED_DESC" />
+        <field name="captionOpacity" type="text" default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_OPACITY_DESC" />
+        <field name="captionBackground" type="colorpicker" default="#000000" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_BACKGROUND" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_BACKGROUND_DESC" />
+        <field name="captionPosition" type="list" default="topleft" label="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_POSITION" description="MOD_SL_IVIEW_SLIDER_FIELD_CAPTION_POSITION_DESC">
+          <option value="topleft">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_TOPLEFT</option>
+          <option value="topright">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_TOPRIGHT</option>
+          <option value="bottomleft">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_BOTTOMLEFT</option>
+          <option value="bottomright">MOD_SL_IVIEW_SLIDER_OPTION_CAPTION_POSITION_BOTTOMRIGHT</option>
+        </field>
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_NAVIGATION" label="" description="" />
+        <field name="directionNav" type="radio" default="0" label="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV" description="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV_DESC">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="directionNavHoverOpacity" type="text" default="0.6" label="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_DIRECTIONNAV_OPACITY_DESC" />
+        <field name="controlNav" type="radio" default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV" description="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV_DESC">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="controlNavHoverOpacity" type="text" default="0.6" label="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_CONTROLNAV_OPACITY_DESC" />
+        <field name="pauseOnHover" type="radio" default="0" label="MOD_SL_IVIEW_SLIDER_FIELD_PAUSEONHOVER" description="MOD_SL_IVIEW_SLIDER_FIELD_PAUSEONHOVER_DESC">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="previousLabel" type="text" default="Prev" label="MOD_SL_IVIEW_SLIDER_FIELD_PREVTEXT" description="MOD_SL_IVIEW_SLIDER_FIELD_PREVTEXT_DESC" />
+        <field name="nextLabel" type="text" default="Next" label="MOD_SL_IVIEW_SLIDER_FIELD_NEXTTEXT" description="MOD_SL_IVIEW_SLIDER_FIELD_NEXTTEXT_DESC" />
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_APPEARANCE" label="" description="" />
+        <field name="titleColor" type="colorpicker" default="#FFFFFF" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_COLOR_DESC" />
+        <field name="titleFontSize" type="integer" default="18" first="10" last="36" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_SIZE" description="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_SIZE_DESC" />
+        <field name="titleFontStyle" type="folderlist" directory="modules/mod_sl_iview_slider/assets/fonts" hide_none="1" hide_default="0" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_STYLE" description="MOD_SL_IVIEW_SLIDER_FIELD_TITLE_FONT_STYLE_DESC" />
+        <field name="descColor" type="colorpicker" default="#FFFFFF" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_SL_IVIEW_SLIDER_FIELD_DESCRIPTION_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_DESCRIPTION_COLOR_DESC" />
+        <field name="descFontSize" type="integer" default="12" first="10" last="36" step="1" label="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_SIZE" description="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_SIZE_DESC" />
+        <field name="descFontStyle" type="folderlist" directory="modules/mod_sl_iview_slider/assets/fonts" hide_none="1" hide_default="0" default="" label="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_STYLE" description="MOD_SL_IVIEW_SLIDER_FIELD_DESC_FONT_STYLE_DESC" />
+        <field name="" type="header" default="MOD_SL_IVIEW_SLIDER_FIELD_DIVIDER_TIMER" label="" description="" />
+        <field name="timer" type="radio" default="Pie" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_DESC">
+          <option value="Pie">MOD_SL_IVIEW_SLIDER_FIELD_TIMER_PIE</option>
+          <option value="360Bar">MOD_SL_IVIEW_SLIDER_FIELD_TIMER_360BAR</option>
+          <option value="Bar">MOD_SL_IVIEW_SLIDER_FIELD_TIMER_BAR</option>
+        </field>
+        <field name="timerPosition" type="list" default="top-right" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_POSITION" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_POSITION_DESC">
+          <option value="top-left">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_TOPLEFT</option>
+          <option value="top-right">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_TOPRIGHT</option>
+          <option value="bottom-left">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_BOTTOMLEFT</option>
+          <option value="bottom-right">MOD_SL_IVIEW_SLIDER_OPTION_FIELD_TIMER_BOTTOMRIGHT</option>
+        </field>
+        <field name="timerBg" type="colorpicker" default="#000000" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_BACKGROUND" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_BACKGROUND_DESC" />
+        <field name="timerColor" type="colorpicker" default="#EEEEEE" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_COLOR_DESC" />
+        <field name="timerOpacity" type="text" default="0.5" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_OPACITY" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_OPACITY_DESC" />
+        <field name="timerDiameter" type="text" default="30" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_DIAMETER" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_DIAMETER_DESC" />
+        <field name="timerStroke" type="text" default="3" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_STROKE" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMER_STROKE_DESC" />
+        <field name="timerBarStroke" type="text" default="1" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE_DESC" />
+        <field name="timerBarStrokeColor" type="colorpicker" default="#EEEEEE" cellwidth="7" cellheight="10" top="20" left="-30" label="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE_COLOR" description="MOD_SL_IVIEW_SLIDER_FIELD_TIMERBAR_STROKE_COLOR_DESC" />
+      </fieldset>
+      <fieldset name="JQUERY">
+        <field name="jquery_source" type="radio" default="local" label="MOD_SL_IVIEW_SLIDER_FIELD_JQUERY_SOURCE" description="MOD_SL_IVIEW_SLIDER_FIELD_JQUERY_SOURCE_DESC">
+          <option value="local">MOD_SL_IVIEW_SLIDER_OPTION_JQUERY_SOURCE_LOCAL</option>
+          <option value="google">MOD_SL_IVIEW_SLIDER_OPTION_JQUERY_SOURCE_GOOGLE</option>
+          <option value="none">JNONE</option>
+        </field>
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="moduleclass_sfx" type="text" size="40" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <field name="cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_LABEL">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+        <field name="cachemode" type="hidden" default="static">
+          <option value="static"></option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+</install>
