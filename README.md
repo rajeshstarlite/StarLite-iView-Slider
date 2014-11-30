@@ -1,7 +1,7 @@
 StarLite iView Slider
 =====================
 
-StarLite iView Slider is great slideshow module for Joomla. This module is based on iView jQuery image slider with animated captions, awesome layout. Easily add unlimited number of slides and captions. You can use it as image slider, image gallery, banner rotator, banner ads, or even presentation. This plugin uses unobstrusive javascript to transform a block of simple HTML markup into a georgous elegant slider, which can be completely customized using HTML5 data attributes. The markup is valid HTML5 and SEO optimized, with all content always being available to search engines. This slider includes 35 transition effects which is completely configurable. To drastically reduce page loading times, preloading is available on a per slider basis, so that images will only be loaded right before the slider to be started.
+StarLite iView Slider is great slideshow module for Joomla. This module is based on iView jQuery image slider with animated captions, awesome layout. Easily add unlimited number of slides and captions. You can use it as image slider, image gallery, banner rotator, banner ads, or even presentation. This module uses unobstrusive javascript to transform a block of simple HTML markup into a georgous elegant slider, which can be completely customized using HTML5 data attributes. The markup is valid HTML5 and SEO optimized, with all content always being available to search engines. This slider includes 35 transition effects which is completely configurable. To drastically reduce page loading times, preloading is available on a per slider basis, so that images will only be loaded right before the slider to be started.
 
 Master branch supports Joomla 2.5.x version.
 
